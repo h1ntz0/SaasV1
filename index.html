@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Peminjaman Ruangan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/image2.png">
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">Pemangan</div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#booking">Room</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li>
+                    <a href="./login/login.html" target="_blank" onclick="window.open(this.href); return false;">Sign In
+                        & Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <div class="welcome-text">
+                <h3>Selamat Datang di Website Pemangan</h3>
+                <p>Pemangan atau Peminjaman Ruangan adalah website online untuk memudahkan peminjaman ruangan yang ada
+                    di SMK Negeri 1 Jakarta.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Pemangan adalah Website digital untuk mempermudah peminjaman ruangan yang ada di SMK Negeri 1 Jakarta.
+                Dengan
+                Pemangan, guru, staff dan siswa/i dapat melihat ketersediaan, memesan ruangan, dan mengelola jadwal
+                secara online dengan mudah dan cepat.</p>
+        </section>
+
+        <section id="booking">
+            <h2>Daftar Ruangan</h2>
+
+            <!-- Search bar -->
+            <div class="search-container">
+                <input type="text" id="room-search" placeholder="Cari ruangan...">
+            </div>
+
+            <!-- Scrollable Room list inside a box -->
+            <div class="room-box">
+                <div class="room-list">
+                    <div class="room-card" data-room="Ruangan 1 Gedung Baru">
+                        <div class="room-details">
+                            <h3>Ruangan 1</h3>
+                            <p>Dekat selasar gedung baru.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-room="Ruangan 23 Gedung Baru">
+                        <div class="room-details">
+                            <h3>Ruangan 23</h3>
+                            <p>Dekat selasar gedung baru.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-room="Ruangan 2 Gedung Baru">
+                        <div class="room-details">
+                            <h3>Ruangan 2</h3>
+                            <p>Dekat selasar gedung baru.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-room="Ruangan 3 Gedung Baru">
+                        <div class="room-details">
+                            <h3>Ruangan 3</h3>
+                            <p>Dekat selasar gedung baru.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-room="Ruangan 12 Gedung Baru">
+                        <div class="room-details">
+                            <h3>Ruangan 12</h3>
+                            <p>Dekat selasar gedung baru.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-room="Ruangan 26 Gedung Baru">
+                        <div class="room-details">
+                            <h3>Ruangan 26</h3>
+                            <p>Dekat selasar gedung baru.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-room="Ruangan 27 Gedung Baru">
+                        <div class="room-details">
+                            <h3>Ruangan 27</h3>
+                            <p>Dekat selasar gedung baru.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-room="Ruangan 28 Gedung Baru">
+                        <div class="room-details">
+                            <h3>Ruangan 28</h3>
+                            <p>Dekat selasar gedung baru.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-room="Ruangan 29 Gedung Baru">
+                        <div class="room-details">
+                            <h3>Ruangan 29</h3>
+                            <p>Dekat selasar gedung baru.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-room="Ruangan 403 Gedung Baru">
+                        <div class="room-details">
+                            <h3>Ruangan 403</h3>
+                            <p>Dekat selasar gedung baru.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-room="Ruangan 404 Gedung Baru">
+                        <div class="room-details">
+                            <h3>Ruangan 404</h3>
+                            <p>Dekat selasar gedung baru.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-room="Ruangan 15 Gedung Lama">
+                        <div class="room-details">
+                            <h3>Ruangan 15</h3>
+                            <p>Daerah Gedung lama dekat gym.</p>
+                            <div class="room-info">
+                                <button class="book-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More rooms... -->
+                </div>
+            </div>
+        </section>
+
+
+        <div id="booking-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="booking-form">
+                    <input type="text" id="selected-room" readonly>
+                    <input type="text" placeholder="Nama & Kelas" required>
+                    <input type="date" placeholder="Tanggal" required>
+                    <input type="time" placeholder="Waktu" required>
+                    <textarea id="booking-reason" placeholder="Alasan peminjaman ruangan" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <footer id="footer" class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Website Made By:</h3>
+                    <p>Arrofi Zein XI SIJA</p>
+                    <p>Rasya Aryasatya XI SIJA</p>
+                    <p>Fatih Ramasamy Putra XI SIJA</p>
+                </div>
+                <div class="footer-center">
+                    <h3>Our Instagram:</h3>
+                    <a href="https://www.instagram.com/zeinarrofi/profilecard/?igsh=a2Z2bWxlNzBvdWVt"
+                        target="_blank">Arrofi Zein</a>
+                    <a href="https://www.instagram.com/thegenocidess?igsh=MTdiaGlkYWMxNDhybQ==" target="_blank">Rasya
+                        Aryasatya</a>
+                    <a href="https://www.instagram.com/ramasamyf_?igsh=MWM3cTNocjJ1NDYzag==" target="_blank">Fatih
+                        Ramasamy Putra</a>
+                </div>
+                <div class="footer-right">
+                    <h3>Project Node.js:</h3>
+                    <p>Pak Iqbal dan Pak Wanto</p>
+                </div>
+                <p class="copyright">&copy; 2024 Pemangan. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
